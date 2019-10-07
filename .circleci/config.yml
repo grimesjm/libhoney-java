@@ -44,6 +44,9 @@ workflows:
   build:
     jobs:
       - java:
+          javaversion: "7"
+          name: JDK-7
+      - java:
           javaversion: "8"
           name: JDK-8
       - java:
