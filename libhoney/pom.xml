@@ -73,7 +73,9 @@
                                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                             </manifestEntries>
                         </transformer>
-
+                        <transformer
+                            implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer">
+                        </transformer>
                     </transformers>
                 </configuration>
                 <executions>
